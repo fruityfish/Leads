@@ -1,0 +1,34 @@
+#include <iostream>
+ 
+int main()
+{
+    int n;
+    std::cin>>n;
+    unsigned int player1 [1100] ={};
+    unsigned int player2 [1100]={};
+    int p1 = 0, p2 = 0;
+    for (int one = 0; one <n; ++one)//
+        {
+        std::cin>>player1[one]>>player2[one];
+         if (player1 [one]>player2[one])
+         {//add the things together
+             int test = player1[one]-player2[one];
+             if (test>p1)
+                p1= test;
+         }
+        else if (player2[one]>player1[one])
+        {
+            int test = player2[one]-player1[one];
+             if (test>p2)
+                p2= test;
+        }
+ 
+    }
+    if (p1 < p2)
+ 
+        std::cout<<2<<p2;
+    else if (p2 < p1)
+        std::cout<<1<<" "<<p1;
+ 
+    return 0;
+}
