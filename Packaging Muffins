@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main()
+{
+int t;//test cases
+std::cin>>t;
+int n[1000];//numbers of cupcakes
+for (int counter = 0; counter < t; ++counter)
+    std::cin>>n[counter];
+for (int counter1 = 0; counter1 < t; ++counter1)
+    std::cout<<(n[counter1]/2)+1<<std::endl;
+    return 0;
+}
