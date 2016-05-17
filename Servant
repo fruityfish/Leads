@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    int t;
+    int input;
+    int test[100];
+    std::cin>>t;
+    for (int counter = 0; counter < t; ++counter)//take input cycle
+    {
+        std::cin>>input;//take input
+        test[counter]=input;//store it in this array
+    }
+    for (int i = 0; i<t; ++i)//Check what to output
+    if (test[i]>=10)
+        std::cout<<-1<<std::endl;
+    else if (test[i]<10)
+        std::cout<<"What an obedient servant you are!"<<std::endl;
+    return 0;
+}
